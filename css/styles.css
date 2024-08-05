@@ -1,0 +1,62 @@
+@font-face {
+  font-family: Summer;
+  src: url(/assets/Rockit.ttf);
+}
+html {
+  background-color: cornsilk;
+}
+html body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+html body aside {
+  width: 5%;
+  background-color: lightseagreen;
+  opacity: 80%;
+  border-right: 2px solid black;
+}
+html body aside nav {
+  display: flex;
+  height: 100%;
+  width: auto;
+  flex-direction: column;
+}
+html body aside nav #home {
+  width: 4vw;
+  height: 4vw;
+  margin: 14vh 8px;
+  cursor: pointer;
+}
+html body aside nav #event {
+  width: 4vw;
+  height: 4vw;
+  margin: 10vh 8px;
+  cursor: pointer;
+}
+html body aside nav #gallery {
+  width: 4vw;
+  height: 4vw;
+  margin: 14vh 8px;
+  cursor: pointer;
+}
+html body main {
+  width: 95%;
+  display: flex;
+}
+html body main video {
+  width: 100%;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 0;
+}
+html body main p {
+  position: absolute;
+  font-size: 25vh;
+  font-family: Summer;
+  color: black;
+  z-index: 100;
+  margin: 0;
+  padding-top: 28vh;
+}/*# sourceMappingURL=styles.css.map */
