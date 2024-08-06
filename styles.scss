@@ -3,60 +3,124 @@
     src: url(/assets/Rockit.ttf);
 }
 
-html{
+html {
     background-color: cornsilk;
-    body{
+
+    body {
         margin: 0;
         padding: 0;
         display: flex;
-        aside{
+        flex-direction: column;
+
+        aside {
+            position: fixed;
+            z-index: 10;
             width: 5%;
             background-color: lightseagreen;
             opacity: 80%;
-            border-right: 2px solid black;
-            nav{
+
+            nav {
                 display: flex;
-                height: 100%;
+                height: 100vh;
                 width: auto;
                 flex-direction: column;
-                #home{
+                z-index: 10;
+
+                #home, #event, #gallery {
                     width: 4vw;
                     height: 4vw;
-                    margin: 14vh 8px;
+                    margin: 13vh 8px;
                     cursor: pointer;
-                }
-                #event{
-                    width: 4vw;
-                    height: 4vw;
-                    margin: 10vh 8px;
-                    cursor: pointer;
-                }
-                #gallery{
-                    width: 4vw;
-                    height: 4vw;
-                    margin: 14vh 8px;
-                    cursor: pointer;
+
+                    &:nth-child(2) {
+                        margin: 8vh 8px;
+                    }
                 }
             }
         }
-        main{
-            width: 95%;
+
+        main {
+            flex: 1;
             display: flex;
-            video{
-                width: 100%;
+            position: relative;
+            border: none;
+            video {
+                width: 100vw;
                 height: 100vh;
+                border: none;
                 object-fit: cover;
-                z-index: 0;
+                outline: none;
+                position: fixed;
             }
-            p{
+            p {
                 position: absolute;
                 font-size: 25vh;
                 font-family: Summer;
                 color: black;
-                z-index: 100;
                 margin: 0;
-                padding-top: 28vh;
+                padding-top: 29vh;
+                left: 5.5%;
             }
         }
+
+        footer {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            .contact {
+                display: flex;
+                height: 40vh;
+                width: 40vh;
+                opacity: 85%;
+                border-radius: 50%;
+                background-image: url(/assets/ball.png);
+                background-size: cover;
+                background-position: center;
+                position: relative;
+                top: 90vh;
+                z-index: 10;
+                justify-content: center;
+                animation: none;
+                .list{
+                    width: auto;
+                    justify-content: center;
+                    align-content: space-between;
+                    p{
+                        text-align: center;
+                        margin: 1rem;
+                        padding: 1rem 10px;
+                        border-radius: 50%;
+                        font-size: 1.8em;
+                        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                        font-weight: 100;
+                        &:nth-child(1){
+                            width: 10vw;
+                            margin: 6px auto 2rem auto;
+                            font-size: 2em;
+                            border-bottom: black solid 1px;
+                        }
+                        &:nth-child(2){
+                            margin-bottom: 8px;
+                        }
+                        &:nth-child(3){
+                            margin-top: 0;
+                            padding: 1rem;
+                        }
+                    }
+                }
+            }
+            .about{
+
+            }
+        }
+    }
+}
+
+@keyframes roll {
+    0% {
+        transform: translateX(0) rotate(0deg);
+    }
+    100% {
+        transform: translateX(36vw) rotate(360deg);
     }
 }
