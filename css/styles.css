@@ -34,13 +34,13 @@ html body aside nav #home, html body aside nav #event, html body aside nav #gall
 html body aside nav #home:nth-child(2), html body aside nav #event:nth-child(2), html body aside nav #gallery:nth-child(2) {
   margin: 8vh 8px;
 }
-html body main {
+html body .homeMain {
   flex: 1;
   display: flex;
   position: relative;
   border: none;
 }
-html body main video {
+html body .homeMain video {
   width: 100vw;
   height: 100vh;
   border: none;
@@ -49,7 +49,7 @@ html body main video {
   outline: none;
   position: fixed;
 }
-html body main .summer {
+html body .homeMain .summer {
   position: absolute;
   font-size: 25vh;
   font-family: Summer;
@@ -58,13 +58,13 @@ html body main .summer {
   padding-top: 29vh;
   left: 5.5%;
 }
-html body footer {
+html body .ball {
   width: 100%;
   height: 40vh;
   display: flex;
   justify-content: center;
 }
-html body footer .contact {
+html body .ball .contact {
   display: flex;
   height: 40vh;
   width: 40vh;
@@ -73,19 +73,18 @@ html body footer .contact {
   background-size: cover;
   background-position: center;
   position: relative;
-  left: 15vw;
   top: 90vh;
   z-index: 10;
   justify-content: center;
   animation: none;
   box-shadow: 6px 12px 2rem;
 }
-html body footer .contact .list {
+html body .ball .contact .list {
   width: auto;
   justify-content: center;
   align-content: space-between;
 }
-html body footer .contact .list p {
+html body .ball .contact .list p {
   text-align: center;
   margin: 1rem;
   padding: 1rem 10px;
@@ -94,40 +93,52 @@ html body footer .contact .list p {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-weight: 100;
 }
-html body footer .contact .list p:nth-child(1) {
+html body .ball .contact .list p:nth-child(1) {
   width: 10vw;
   margin: 6px auto 2rem auto;
   font-size: 2em;
   border-bottom: black solid 1px;
 }
-html body footer .contact .list p:nth-child(2) {
+html body .ball .contact .list p:nth-child(2) {
   margin-bottom: 8px;
 }
-html body footer .contact .list p:nth-child(3) {
+html body .ball .contact .list p:nth-child(3) {
   margin-top: 0;
   padding: 1rem;
 }
-html body footer .about {
-  position: relative;
-  display: flex;
-  top: 100vh;
-  right: 50%;
-  width: 60vw;
-  height: auto;
-  left: -25vw;
+html body .eventMain {
+  width: 80vw;
+  height: 80vh;
+  border: 2px solid black;
+  margin: 6vh auto auto 12vw;
 }
-html body footer .about img {
-  width: 60VW;
-  height: AUTO;
-  position: absolute;
-  z-index: 0;
-}
-html body footer .about p {
-  position: absolute;
+html body .eventMain p {
+  text-align: center;
   font-size: 2em;
-  width: 40vw;
+  margin: 2vh auto;
+}
+html body .eventMain .eventsAll {
   display: flex;
-  justify-content: center;
+  position: relative;
+  width: 75vw;
+  height: 70vh;
+  margin: 0 auto;
+  flex-direction: row;
+  justify-content: space-between;
+}
+html body .eventMain .eventsAll .event {
+  width: 24vw;
+  height: 70vh;
+  border: 2px solid black;
+}
+html body footer {
+  position: fixed;
+  bottom: 3vh;
+  left: 6vw;
+  width: 100vw;
+  height: 5vh;
+  z-index: 10;
+  font-size: 1.8vw;
 }
 
 @keyframes roll {
@@ -135,6 +146,6 @@ html body footer .about p {
     transform: translateX(0) rotate(0deg);
   }
   to {
-    transform: translateX(25vw) rotate(360deg);
+    transform: translateX(30vw) rotate(360deg);
   }
 }/*# sourceMappingURL=styles.css.map */
