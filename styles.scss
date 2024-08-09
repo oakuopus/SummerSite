@@ -29,7 +29,7 @@ html {
                 #home, #event, #gallery {
                     width: 4vw;
                     height: 4vw;
-                    margin: 13vh 8px;
+                    margin: 13vh 1vh;
                     cursor: pointer;
 
                     &:nth-child(2) {
@@ -44,6 +44,7 @@ html {
             display: flex;
             position: relative;
             border: none;
+            flex-direction: column;
             video {
                 width: 100vw;
                 height: 100vh;
@@ -53,13 +54,22 @@ html {
                 position: fixed;
             }
             .summer{
-                position: absolute;
+                position: relative;
                 font-size: 25vh;
                 font-family: Summer;
                 color: black;
                 margin: 0;
-                padding-top: 29vh;
+                padding-top: 20vh;
                 left: 5.5%;
+                height: 60vh;
+            }
+            .about{
+                width: 52vw;
+                z-index: 99;
+                position: relative;
+                left: 5.5%;
+                font-size: 1vw;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             }
         }
         .ball {
@@ -67,6 +77,7 @@ html {
             height: 40vh;
             display: flex;
             justify-content: center;
+            margin-top: 4vh;
             .contact {
                 display: flex;
                 height: 40vh;
@@ -76,7 +87,6 @@ html {
                 background-size: cover;
                 background-position: center;
                 position: relative;
-                top: 90vh;
                 z-index: 10;
                 justify-content: center;
                 animation: none;
@@ -90,13 +100,13 @@ html {
                         margin: 1rem;
                         padding: 1rem 10px;
                         border-radius: 50%;
-                        font-size: 1.8em;
+                        font-size: 2vw;
                         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
                         font-weight: 100;
                         &:nth-child(1){
                             width: 10vw;
                             margin: 6px auto 2rem auto;
-                            font-size: 2em;
+                            font-size: 2.5vw;
                             border-bottom: black solid 1px;
                         }
                         &:nth-child(2){
@@ -111,41 +121,63 @@ html {
             }
         }
         .eventMain{
-            width: 80vw;
-            height: 80vh;
+            width: 90vw;
+            height: 90vh;
             border: 2px solid black;
-            margin: 6vh auto auto 12vw;
+            margin: 4vh auto auto 7vw;
             p{
                 text-align: center;
-                font-size: 2em;
+                font-size: 3em;
                 margin: 2vh auto;
             }
             .eventsAll{
                 display: flex;
                 position: relative;
-                width: 75vw;
-                height: 70vh;
+                width: 85vw;
+                height: 85vh;
                 margin: 0 auto;
                 flex-direction: row;
                 justify-content: space-between;
                 .event{
-                    width: 24vw;
-                    height: 70vh;
+                    width: 28vw;
+                    height: 80vh;
                     border: 2px solid black;
                 }
-                #olympic{
-                    
+                #goodwood, #lollapalooza, #olympics{
+                    flex-direction: column;
+                    text-align: center;
+                    p{
+                        &:nth-child(1){
+                            font-family: Verdana, Geneva, Tahoma, sans-serif;
+                        }
+                        &:nth-child(2){
+                            font-size: 1.2vw;
+                            font-family:Verdana, Geneva, Tahoma, sans-serif ;
+                            padding: 1vh 0;
+                            border-top: 1px solid black;
+                            border-bottom: 1px solid black;
+                        }
+                        &:nth-child(3){
+                            font-size: 1.5vw;
+                            font-family: Verdana, Geneva, Tahoma, sans-serif;
+                        }
+                    }
+                    a{
+                        img{
+                            width: 28vw;
+                        }
+                    }
                 }
             }
         }
         footer{
             position: fixed;
-            bottom: 3vh;
+            bottom: 2vh;
             left: 6vw;
             width: 100vw;
             height: 5vh;
             z-index: 10;
-            font-size: 1.8vw;
+            font-size: 1vw;
         }
     }
 }
