@@ -161,7 +161,7 @@ html {
                         &:nth-child(3){
                             font-size: 1.5vw;
                             font-family: Verdana, Geneva, Tahoma, sans-serif;
-                            width: 20vw;
+                            width: 50vh;
                         }
                     }
                     a{
@@ -170,29 +170,38 @@ html {
                         }
                     }
                     #lollaImg{
-                        margin-top: 9.2vw;
+                        margin-top: 5.3vh;
                     }
                     #olympicsImg{
-                        margin-top: 6.6vw;
+                        margin-top: .1vh;
                     }
                     #goodwoodImg{
-                        margin-top: 2.4vw;
+                        margin-top: 2.7vh;
                     }
                 }
             }
         }
         .gallery{
             width: 90vw;
-            height: 90vh;
-            border: 2px solid black;
-            margin: 4vh auto auto 7vw;
-            .grids{
+            margin: 4vh auto 7vh 7vw;
+            justify-content: center;
+            
+            .galleryTxt{
+                font-size: 3em;
+                text-align: center;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;           
+            }
+            .grid{
                 display: grid;
-                grid-template-columns: repeat(4, 1fr);
+                grid-template-columns: repeat(3, 1fr);
                 grid-template-rows: repeat(3, 1fr);
-                padding: 4px;
-                border: 1px solid black;
-                width: 22vw;
+                margin: auto;
+                width: 80vw;
+                img{
+                    width: 25vw;
+                    padding: 1vw;
+                    border: 1px solid black;
+                }
             }
         }
         footer{

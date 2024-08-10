@@ -45,8 +45,7 @@ html body .homeMain video {
   width: 100vw;
   height: 100vh;
   border: none;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   outline: none;
   position: fixed;
 }
@@ -159,33 +158,41 @@ html body .eventMain .eventsAll #goodwood p:nth-child(2), html body .eventMain .
 html body .eventMain .eventsAll #goodwood p:nth-child(3), html body .eventMain .eventsAll #lollapalooza p:nth-child(3), html body .eventMain .eventsAll #olympics p:nth-child(3) {
   font-size: 1.5vw;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  width: 20vw;
+  width: 50vh;
 }
 html body .eventMain .eventsAll #goodwood a img, html body .eventMain .eventsAll #lollapalooza a img, html body .eventMain .eventsAll #olympics a img {
   width: 28vw;
 }
 html body .eventMain .eventsAll #goodwood #lollaImg, html body .eventMain .eventsAll #lollapalooza #lollaImg, html body .eventMain .eventsAll #olympics #lollaImg {
-  margin-top: 9.2vw;
+  margin-top: 5.3vh;
 }
 html body .eventMain .eventsAll #goodwood #olympicsImg, html body .eventMain .eventsAll #lollapalooza #olympicsImg, html body .eventMain .eventsAll #olympics #olympicsImg {
-  margin-top: 6.6vw;
+  margin-top: 0.1vh;
 }
 html body .eventMain .eventsAll #goodwood #goodwoodImg, html body .eventMain .eventsAll #lollapalooza #goodwoodImg, html body .eventMain .eventsAll #olympics #goodwoodImg {
-  margin-top: 2.4vw;
+  margin-top: 2.7vh;
 }
 html body .gallery {
   width: 90vw;
-  height: 90vh;
-  border: 2px solid black;
-  margin: 4vh auto auto 7vw;
+  margin: 4vh auto 7vh 7vw;
+  justify-content: center;
 }
-html body .gallery .grids {
+html body .gallery .galleryTxt {
+  font-size: 3em;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+html body .gallery .grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  padding: 4px;
+  margin: auto;
+  width: 80vw;
+}
+html body .gallery .grid img {
+  width: 25vw;
+  padding: 1vw;
   border: 1px solid black;
-  width: 22vw;
 }
 html body footer {
   position: fixed;
@@ -204,4 +211,4 @@ html body footer {
   to {
     transform: translateX(30vw) rotate(360deg);
   }
-}/*# sourceMappingURL=styles.css.map */
+}
